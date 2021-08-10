@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title of the page -->
+		<title>Contact Us</title>
+		<meta content="Coursework">
+		<!-- Meta tags for the Contact Us page -->
+		<meta name="keywords" content="technologies,internet,html">
+		<meta name="author" content="Shangyu Karmacharya">
+		<meta name="description" content="Page for contact info and message form">
+		<link rel="stylesheet" href="../CSS/style.css"> <!-- Import external CSS/stylesheet -->
+		<!-- Internal CSS -->
+		<style>
+			/* Change dimensions and font properties, and add padding for sections of this page */
+			.part
+			{
+				padding: 80px 40px 20px 40px;
+				width: 42%;
+				height: 80%;
+				font-family: bahnschrift;
+				font-size: 22px;
+			}
+			/* Style of table data/cell. Add padding and set height */
+			td
+			{
+				padding: 5px;
+				height: 30px;
+			}
+			/* Change dimension of input to fill the space of table cell */
+			#i
+			{
+				width: 100%;
+				height: 100%;
+			}
+			/* Dimension and margin for image in part class */
+			.part img
+			{
+				height: 30px;
+				width: 30px;
+				margin-right: 20px;
+			}
+			/* Reduce opacity when hovered over image in in part class */
+			.part img:hover
+			{
+				opacity: .7;
+			}
+			/* Submit button appearance */
+			.sub
+			{
+				width: 50%;
+				color: #fff;
+				background-color: darkblue;
+				border-radius: 10px;
+				font-size: 20px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Aligns the content at center -->
+		<center>
+			<!-- Page Header calling header class -->
+			<div class="header">
+				<a href="../Index.html"> <div class="logo"> </div> </a>
+				<a href="../Index.html"><h1 style="color: #5a97fa; font-size: 40px;/* change colour and font size of website name*/">WEEBSITE!!!</h1></a>
+				<!-- Navigation bar -->
+				<div id="nav">
+					<a href="../Index.html">Home</a>
+					<a href="CV.html">CV</a>
+					<a href="Blog.html">Blog</a>
+					<a href="Research.html">Research</a>
+					<a href="Contact_Us.html" style="background-color: darkred;/* Active Page */">Contact Us</a>
+				</div>
+				<!-- Navigation bar end -->
+			</div>
+			<!-- Page header end -->
+			<!-- Page Main content -->
+			<div>
+				<!-- Contact container -->
+				<div class="data">
+					<!-- Left side of the contact us -->
+					<div>
+						<!-- Contact form -->
+						<form name="Form" onsubmit="validate_form()" class="part" style="float: left; padding-top: 20px;/* form floats to the left with some padding */">
+							<h1 align="left" style="padding-bottom: 50px; color: lightyellow;font-size: 55px;/* Style for the text */">Contact Us</h1>
+							<!-- Table containing the form content -->
+							<table>
+								<tr>
+									<td>First Name: * </td>
+									<td colspan="2"><input type="text" name="firstname" id="i"></td><!-- id="i" to make the input area fill the table cell -->
+								</tr>
+								<tr>
+									<td>Last Name: * </td>
+									<td colspan="2"><input type="text" name="lastname" id="i"></td><!-- id="i" to make the input area fill the table cell -->
+								</tr>
+								<tr>
+									<td>Email: * </td>
+									<td colspan="2"><input type="text" name="email" id="i"></td><!-- id="i" to make the input area fill the table cell -->
+								</tr>
+								<tr>
+									<td></td>
+									<td colspan="2">Message: * <br><br><textarea name="message" rows="10" cols="40" placeholder="Enter Message"></textarea></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td colspan="2"><input type="submit" value="Submit" class="sub"></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 70%;color: lightyellow;/* Style for the text */">* - Required to be filled.</td>
+								</tr>
+							</table>
+							<!-- Form content table end -->
+						</form>
+						<!-- Contact form end -->
+					</div>
+					<!-- Left side of contact us end -->
+					<!-- Right side of the contact us -->
+					<div class="part" style="float: right;/* division floats to the right */">
+						<h2>Get in Touch with Us</h2>
+						<br><br>
+						If you have any questions, inquiries or messages<br>
+						Feel free to contact us
+						<br><br><br><br>
+						<p style="font-style: italic;font-size: 18px;color: lightyellow;/* Style for the text */">
+							Contact No.<br>
+							+977-1-980-3456215
+							<br><br>
+							Email<br>
+							shangyuk@yahoo.com<br>
+							kshangyu@gmail.com
+						</p>
+						<br><br><br><br>
+						<!-- Social media link icons -->
+						<!-- target="_blank" causes the link to open in a new tab -->
+	  					<a href="https://www.facebook.com/shangyu.karmacharya" target="_blank"><img src="../Images/fb.png"></a>
+						<a href="https://twitter.com/shangyuk" target="_blank"><img src="../Images/twt.png"></a>
+						<a href="https://www.instagram.com/shangyu._________/?hl=ro" target="_blank"><img src="../Images/ins.png"></a>
+						<!-- social media icons end -->
+					</div>
+					<!-- Right side of the contact us end -->
+				</div>
+				<!-- Contact container end -->
+			</div>
+			<!-- Page Main content end -->
+			<!-- Page Footer calling footer class -->
+			<div class="footer">
+				<a href="CV.html"><span>By- Shangyu Karmacharya</span></a>
+	  			&copy; 2020 Website
+	  			<!-- Division for social media icons -->
+	  			<div class="extsite">
+	  				<!-- target="_blank" causes the link to open in a new tab -->
+	  				<a href="https://www.facebook.com/shangyu.karmacharya" target="_blank"><img src="../Images/fb.png"></a>
+					<a href="https://twitter.com/shangyuk" target="_blank"><img src="../Images/twt.png"></a>
+					<a href="https://www.instagram.com/shangyu._________/?hl=ro" target="_blank"><img src="../Images/ins.png"></a>
+	  			</div>
+	  			<!-- Division for social media icons end -->
+			</div>
+			<!-- Page footer end -->
+		</center>
+		<script src="../JS/script.js"></script> <!-- Import external javascript -->
+		<!-- Internal Javascript -->
+		<script>
+			// Form validation
+			function validate_form() 
+			{
+				// Get user input values from form and store it in variables
+				var fname=document.forms["Form"]["firstname"].value;
+				var lname=document.forms["Form"]["lastname"].value;
+				var mail=document.forms["Form"]["email"].value;
+				var message=document.forms["Form"]["message"].value;
+
+				// If condition to check whether the necessary fields are filled or not
+				if (fname==""|| lname==""|| mail==""|| message=="")
+				{
+					alert("Empty fields found. Please fill the details in all the fields.");// Pop up when any field is empty
+				}else{
+					window.open("../Images/ty.gif", "_blank", "top=300,left=300,width=300,height=300");// Pop up when all fields are filled (a new small window with a thank you gif is opened)
+				}
+			}
+		</script>
+	</body>
+</html>

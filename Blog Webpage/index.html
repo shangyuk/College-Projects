@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title of the page -->
+		<title>Home Page</title>
+		<!-- Meta tags for the Home page -->
+		<meta content="Coursework">
+		<meta name="keywords" content="internet,technologies,html">
+		<meta name="author" content="Shangyu Karmacharya">
+		<meta name="description" content="Home page of this website">
+		<link rel="stylesheet" href="CSS/style.css"> <!-- Import external CSS/stylesheet -->
+		<!-- Internal CSS -->
+		<style>
+			/* Properties/appearance of image slider */
+		    .slider
+		    {
+		      	width: 85%;
+		      	height: 450px;
+		      	margin: 0px auto; /* auto positions */
+		      	overflow: hidden;
+		      	box-shadow: 0px -4px 20px #800;
+		      	border-radius: 30%;
+		    }
+		    /* Reduce opacity when hovering over slider */
+		    .slider:hover
+		    {
+		    	opacity: .9;
+		    }
+		    /* Set positioning and appearance of image slider button/all button in the page */
+		    button
+		    {
+		    	padding: 20px;
+		    	font-size: 20px;
+		    	color: grey;
+		    	border: 0px;
+		    	position: absolute;
+		    	bottom: -44%;
+		    	cursor: pointer;
+		    	border-radius: 95%;
+		    	box-shadow: 0px -4px 20px #0009;
+		    }
+		    /* Adjust margin to properly position the next button for image slider */
+		    .next
+		    {
+	 			margin-left: 81.63%;
+		    }
+	  	</style>
+	</head>
+
+	<body>
+		<!-- Aligns the content at center -->
+		<center>
+			<!-- Page Header calling header class -->
+			<div class="header">
+				<a href="Index.html" onclick="alert('This is the Home Page');//pop up"> <div class="logo"> </div> </a>
+				<a href="Index.html"><h1 style="color: #5a97fa; font-size: 40px;/* change colour and font size of website name */">WEEBSITE!!!</h1></a>
+				<!-- Navigation bar -->
+				<div id="nav">
+					<a href="Index.html" style="background-color: darkred;/* Active Page */">Home</a>
+					<a href="Pages/CV.html">CV</a>
+					<a href="Pages/Blog.html">Blog</a>
+					<a href="Pages/Research.html">Research</a>
+					<a href="Pages/Contact_Us.html">Contact Us</a>
+				</div>
+				<!-- Navigation bar end -->
+			</div>
+			<!-- Page header end -->
+			<!-- Page Main content -->
+			<!-- Heading of the page and welcome message -->
+			<div id="pgh1">
+				<!-- Page heading -->
+				<h1 align="left" style="margin-left: 90px; padding-bottom: 10px;/* add margin and padding to page heading */">~ Welcome to my Website ~</h1>
+				<!-- Page heading end -->
+				<!-- Welcome message -->
+				<div style="width: 100%;">
+					<p style="font-size: 28px;padding: 40px 0px 40px 0px;font-family: bahnschrift;color: #5a97fa;line-height: 200%;/* changes appearance and positioning of the welcome message */">
+						<img src="Images/gani.gif" height="200" width="200" style="margin-right: 40px;/* adds margin to the gif image */">Hope You Like The Site<img src="Images/gani.gif" height="200" width="200" style="margin-left: 40px;"><br>
+						Enjoy Your Stay
+					</p>
+				</div>
+				<!-- Welcome message end -->
+			</div>
+		</center>
+			<!-- Division containing image slider -->
+			<div style="margin-bottom: 140px;">
+				<!-- Image Slider -->
+				<div class="slider">
+				    <div id="img">
+				      <a href="Pages/CV.html"><img src="Images/a.png"></a>
+				    </div>
+				    <!-- Left button -->
+				    <button onclick="sliderprev()"><</button>
+				    <!-- Right button -->
+					<button class="next" onclick="slidernext()">></button>
+			  	</div>
+			  	<!-- Image slider end -->
+			</div>
+			<!-- Image slider division end -->
+			<!-- Page Main content end -->
+		<!-- Aligns the content at center -->
+		<center>
+			<!-- Page Footer calling footer class -->
+			<div class="footer">
+				<a href="Pages/CV.html"><span>By- Shangyu Karmacharya</span></a>
+	  			&copy; 2020 Website
+	  			<!-- Division for social media icons -->
+	  			<div class="extsite">
+	  				<a href="https://www.facebook.com/shangyu.karmacharya" target="_blank"><img src="Images/fb.png"></a>
+					<a href="https://twitter.com/shangyuk" target="_blank"><img src="Images/twt.png"></a>
+					<a href="https://www.instagram.com/shangyu._________/?hl=ro" target="_blank"><img src="Images/ins.png"></a>
+	  			</div>
+	  			<!-- Division for social media icons end -->
+	  		</div>
+	  		<!-- Page footer end -->
+		</center>
+		<script src="JS/script.js"></script> <!-- Import external javascript -->
+		<!-- Internal Javascript -->
+		<script>
+			var images = ['Images/b.png', 'Images/c.png', 'Images/d.png', 'Images/a.png']; // Array for images in slider
+			var pages = ['Pages/Blog.html','Pages/Research.html','Pages/Contact_Us.html','Pages/CV.html']; // Array for hyperlinks in slider
+			var x = images.length; // Size of images array
+			var imgs = document.getElementById('img'); // Get the image slider div
+
+			setInterval(slidernext, 3500); // Execute slidernext() function every 3.5s
+
+			// Change to next image hyperlink, from array, in image slider
+			function slidernext() 
+			{
+				if (x < images.length){
+				    x = x + 1;
+				} else {
+				    x = 1;
+				}
+				imgs.innerHTML = "<a href=" + pages[x-1] + "><img src=" + images[x - 1] + "></a>";
+			}
+
+			// Change to previous image hyperlink, from array, in image slider
+			function sliderprev() 
+			{
+				if (x > 1){
+				    x = x - 1;
+				} else {
+				    x = images.length;
+				}
+				imgs.innerHTML = "<a href=" + pages[x-1] + "><img src=" + images[x - 1] + "></a>";
+			}
+		</script>
+	</body>
+</html>

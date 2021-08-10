@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title of the page -->
+		<title>CV</title>
+		<!-- Meta tags for the CV page -->
+		<meta content="Coursework">
+		<meta name="keywords" content="technologies,internet,html,shangyu karmacharya">
+		<meta name="author" content="Shangyu Karmacharya">
+		<meta name="description" content="Curriculum Vitae">
+		<link rel="stylesheet" href="../CSS/style.css"> <!-- Import external CSS/stylesheet -->
+		<!-- Internal CSS -->
+		<style>
+			/* Add padding and margin for the CV photo and name, and change font to bahnschrift */
+			.part
+			{
+				padding: 40px 40px 20px 40px;
+				margin: 0px 50px 0px 20px;
+				font-family: bahnschrift;
+			}
+			/* Add a card effect for sections of the CV and alter font properties */
+			.card 
+			{
+	     		background-color: #3118;
+	     		padding: 20px;
+	     		margin-top: 20px;
+	     		border-radius: 10px;
+	     		font-family: bahnschrift;
+	     		font-size: 18px;
+	     		text-align: left;
+	     		line-height: 150%;
+			}
+			/* Change color of text in h2 tag */
+			h2
+			{
+				color: #4cdcfc;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Aligns the content at center -->
+		<center>
+			<!-- Page Header calling header class -->
+			<div class="header">
+				<a href="../Index.html"> <div class="logo"> </div></a>
+				<a href="../Index.html"><h1 style="color: #5a97fa; font-size: 40px;/* change colour and font size of website name*/">WEEBSITE!!!</h1></a>
+				<!-- Navigation bar -->
+				<div id="nav">
+					<a href="../Index.html">Home</a>
+					<a href="CV.html" style="background-color: darkred;/* Active Page */">CV</a>
+					<a href="Blog.html">Blog</a>
+					<a href="Research.html">Research</a>
+					<a href="Contact_Us.html">Contact Us</a>
+				</div>
+				<!-- Navigation bar end -->
+			</div>
+			<!-- Page header end -->
+			<!-- Page Main content -->
+			<div>
+				<!-- Page heading -->
+				<div id="pgh1">
+					<h1>About Me</h1>
+				</div>
+				<!-- Page heading end -->
+				<!-- CV container -->
+				<div class="data">
+					<!-- CV image and name -->
+					<div style="width: 80%;height: 320px; margin: 40px;display: flex;/* set dimension, add margin and make display flexible */">
+						<!-- CV image -->
+						<div class="part" style=";padding: 0px;float: left;/* removes padding and positions left */" >
+							<img src="../Images/me.jpeg" height="300" width="300" style="border-radius: 50%; box-shadow: 0px -4px 20px #000 /* the image is made circular with shadows */">
+						</div>
+						<!-- CV image end -->
+						<!-- CV name -->
+						<div class="part" style="float: right;/* positions right */">
+							<h2 style="color: white;font-size: 80px;">Shangyu<br>Karmacharya</h2>
+						</div>
+						<!-- CV name end -->
+					</div>
+					<!-- CV image and name end -->
+					<!-- Details/Content of CV -->
+					<div style="display: flex;/* the content becomes flexible */">
+						<!-- Left side of the CV -->
+						<div style="flex: 75%;">
+							<!-- Division containing experience -->
+							<div class="card">
+								<h2> Experience</h2><hr size="4"><br>
+								<h3>Otaku Next Entertainment, ​ Metro Park Building, Lekhnath  Marg, Kathmandu</h3>  
+								- Graphics Designer/Digital Artist<br>
+								<sub>December 2017 - January 2018</sub>
+								<br><br>
+								As an Intern:<br>
+								-Created digital art drawings  for social media posts.<br>
+								-Assisted with designing and editing of advertisement pamphlets.<br>
+								-Edited and cleaned various comic book chapters for publication.<br>
+								-Photo-edited pictures of food for a restaurant affiliated with Otaku Next.
+							</div>
+							<!-- Experience division end -->
+							<!-- Division containing education -->
+							<div class="card">
+								<h2> Education</h2><hr size="4"><br>
+								St. Xavier’s School, ​Jawalakhel - ​SEE<br>
+								<sub>April 2007 - May 2017</sub>
+								<br><br>
+								Rato Bangala School, ​Patan Dhoka - ​A-Levels<br>
+								<sub>June 2017 - July 2019</sub>
+								<br><br>
+								Islington College, Kamal Pokhari - BSc(Hons) Computing<br>
+								<sub>September 2019 - Ongoing</sub>
+							</div>
+							<!-- Education division end -->
+						</div>
+						<!-- Right side of the CV -->
+						<div style="flex: 25%; padding-left: 20px;">
+							<!-- Personal details division -->
+							<div class="card" style="margin-bottom: 80px;">
+								Kalimati<br>
+								Kathmandu<br>
+								9803456215<br>
+								shangyuk@yahoo.com<br>
+							</div>
+							<!-- Personal details division end -->
+							<!-- Proficiencies division -->
+							<div class="card">
+								<h2> Proficiencies</h2><hr size="4"><br>
+								- Programming (Java, Visual Basic)<br>
+								- Web Page Designing<br>
+								- Graphics Designing<br>
+							</div>
+							<!-- Proficiencies division end -->
+						</div>
+					</div>
+					<!-- Details/Content of CV end -->
+				</div>
+				<!-- CV container end -->
+			</div>
+			<!-- Page Main content end -->
+			<!-- Page Footer calling footer class -->
+			<div class="footer">
+				<a href="CV.html"><span>By- Shangyu Karmacharya</span></a>
+	  			&copy; 2020 Website
+	  			<!-- Division for social media icons -->
+	  			<div class="extsite">
+	  				<a href="https://www.facebook.com/shangyu.karmacharya" target="_blank"><img src="../Images/fb.png"></a>
+					<a href="https://twitter.com/shangyuk" target="_blank"><img src="../Images/twt.png"></a>
+					<a href="https://www.instagram.com/shangyu._________/?hl=ro" target="_blank"><img src="../Images/ins.png"></a>
+	  			</div>
+	  			<!-- Division for social media icons end -->
+			</div>
+			<!-- Page footer end -->
+		</center>
+		<script src="../JS/script.js"></script> <!-- Import external javascript -->
+	</body>
+</html>
